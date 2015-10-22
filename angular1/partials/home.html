@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <div class="col-md-6">
+            <div>
+                
+                <div class="col-md-12">
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" ng-model="nameText" placeholder="Search">
+                        </div>
+
+                    </form>
+                </div>
+                
+                <div class="col-md-12">
+                    <div class="panel-body" ng-repeat="c in clocks | filter: nameText">
+                        <h4>{{c.name | uppercase}}</h4>
+                        <h5><b>Price:</b>{{c.price | currency}}</h5>
+                        <img ng-src="{{c.image}}" width="319"/> <br/>   
+                        <button class="btn btn-success col-md-8" ng-click="addItem(c)">{{ButtonName}}</button>
+                    </div>
+                </div>
+               
+    
+               
+
+            </div>
+
+           
+
+            
+        </div>
+        <div class="col-md-5" style="background-color: burlywood">
+            <h1>Product You Choose</h1>
+            <div ng-repeat="l in list" class="panel-body">
+                <div class="form-group">
+                    <img ng-src="{{l.image}}" width="100"/> 
+                 
+                    <button class="btn btn-danger" aria-label="Right Align" ng-click="delete(l)">
+                        <span class=" glyphicon glyphicon-remove-circle"></span>
+
+                    </button>
+                    <br/>
+                    <span class="label label-default">{{l.name}} - {{l.price | currency}}</span> 
+                </div>
+
+              
+            </div>
+            <div>
+                <h3>Total Cost: {{getTotal() | currency}}</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

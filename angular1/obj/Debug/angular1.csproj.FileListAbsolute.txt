@@ -1,0 +1,6 @@
+C:\Users\Eishfaq\Documents\Visual Studio 2013\Projects\angular1\angular1\bin\angular1.dll.config
+C:\Users\Eishfaq\Documents\Visual Studio 2013\Projects\angular1\angular1\bin\angular1.dll
+C:\Users\Eishfaq\Documents\Visual Studio 2013\Projects\angular1\angular1\bin\angular1.pdb
+C:\Users\Eishfaq\Documents\Visual Studio 2013\Projects\angular1\angular1\obj\Debug\angular1.dll
+C:\Users\Eishfaq\Documents\Visual Studio 2013\Projects\angular1\angular1\obj\Debug\angular1.pdb
+C:\Users\Eishfaq\Documents\Visual Studio 2013\Projects\angular1\angular1\obj\Debug\angular1.csprojResolveAssemblyReference.cache
